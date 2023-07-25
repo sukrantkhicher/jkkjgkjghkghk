@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #dfecee;
+}
+.div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.start button{
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    
+}
+
+.quiz{
+    width: 70vw;
+    margin: 3rem auto;
+    flex-direction: column;
+    display: none;
+    background-color:whitesmoke;
+}
+
+.quiz .option{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.quiz p{
+    text-align: center;
+    padding: 20px 40px 0px 40px;
+}
+.quiz1{
+    font-size: 22px;
+}
+.option p{
+    background-color: #99f4df;
+    margin: 4px;
+    padding: 0px 101px;
+    border-radius: 4px;
+}
+
+.first{
+    margin-bottom: 20px;
+}

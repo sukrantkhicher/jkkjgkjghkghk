@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>quiz</title>
+        <link rel="stylesheet" href="quiz.css">
+    </head>
+
+    <body>
+        <div class="div">
+            <div id="start">
+                <button>Start Quiz</button>
+
+            </div>
+            <div class="quiz">
+                <p class="quiz1">This is question no. 1</p>
+                <div class="first">
+                <div class="option">
+                    <p>1</p>
+                    <p>2</p>
+                </div>
+                  <div class="option">  
+                    <p>3</p>
+                    <p>4</p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <script>
+            let button = document.querySelector("button")
+            let quizdiv = document.querySelector(".quiz")
+            let x = document.querySelector(".quiz p")
+            let y = document.querySelectorAll(".option p")
+            console.log(x)
+            button.onclick = () => {
+                quizdiv.style.display = "flex"
+                button.style.display = "none"
+                startquiz() 
+
+            }
+
+            function startquiz() {
+                x.innerHTML = questions[0].question;
+                for (let i = 0; i <= questions.length; i++) {
+                    y[i].innerHTML = questions[0].option[i]
+                }
+            }
+            console.log(y)
+
+            let questions = [
+                {
+                    question: "2+2",
+                    answer: 0,
+                    option: [1, 2, 5, 6]
+                },
+                {
+                    question: "2+4",
+                    answer: 1,
+                    option: [1, 6, 0,5]
+                },
+                {
+                    question:" 3+4",
+                    answer: 2,
+                    option: [1, 9, 7, 6]
+                },
+            ]
+        </script>
+    </body>
+
+    </html>
